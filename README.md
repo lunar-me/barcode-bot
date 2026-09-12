@@ -2,11 +2,11 @@
 
 Point your phone at a barcode, get the product and live per-store prices back
 in Telegram. This repo is the object-oriented rewrite of
-[the original single-file barcode bot](https://luna-lab.mywire.org/blog/article51)
-(article 51): same behaviour, byte-for-byte, rebuilt around nine small classes
+[the original barcode bot](https://luna-lab.mywire.org/blog/article51): 
+same behaviour, byte-for-byte, rebuilt around nine small classes
 with one job each. It has been running in production on a Debian home server
-since September 2026, and the rewrite story — why and how — is told in
-[article 52: *Same Bot, Cleaner Bones*](https://luna-lab.mywire.org/blog/article52).
+since September 2025, and the rewrite story, why and how, is told in
+[Same Bot, Cleaner Bones](https://luna-lab.mywire.org/blog/article52).
 
 ## What it does
 
