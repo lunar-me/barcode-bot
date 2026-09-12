@@ -41,7 +41,7 @@ module's own docstring):
 ## Configuration
 
 All instance-specific values come from the environment or a `.env` file next
-to `bot_oop.py` — nothing sensitive is hardcoded. Copy `.env.example` to
+to `barcode-bot.py` — nothing sensitive is hardcoded. Copy `.env.example` to
 `.env` and fill it in:
 
 ```ini
@@ -74,7 +74,7 @@ Python 3.10+ (tested on 3.11.2, Debian 12).
 python3 -m venv venv && . venv/bin/activate   # or use the system interpreter
 pip install -r requirements.txt
 cp .env.example .env && $EDITOR .env
-python bot_oop.py
+python barcode-bot.py
 ```
 
 `pyzbar` needs the zbar native library:
@@ -103,7 +103,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 WorkingDirectory=%h/barcode-scanner-bot
-ExecStart=/usr/bin/python3 bot_oop.py
+ExecStart=/usr/bin/python3 barcode-bot.py
 Restart=on-failure
 RestartSec=10
 StandardOutput=append:%h/barcode-scanner-bot/bot.log
@@ -121,7 +121,7 @@ export there simply takes precedence over `.env`.
 ## Tests
 
 ```bash
-python test_bot_oop.py
+python test_bot.py
 ```
 
 The suite runs 59 checks, no network, no database, no Telegram:
@@ -130,7 +130,7 @@ The suite runs 59 checks, no network, no database, no Telegram:
   against the original `bot.py`'s functions;
 * **behaviour checks** — decision logic, handlers, decoder and the settings
   layer are unit-tested with fakes;
-* **an import probe** — asserts `bot_oop.py` imports side-effect-free even
+* **an import probe** — asserts `barcode-bot.py` imports side-effect-free even
   without a token.
 
 The original `bot.py` is deliberately **not** in this repository (it carries

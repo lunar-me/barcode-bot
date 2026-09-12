@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Barcode bot - minimal database schema
 --
--- Creates the single table bot.py / bot_oop.py read and write:
+-- Creates the single table barcode-bot.py read and write:
 --   database : Barcodes
 --   table    : dbo.Item   (named Item, singular - that is what the bot's SQL
 --                          expects; renaming it would break the queries)

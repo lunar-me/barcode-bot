@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-bot_oop.py — Barcode Scanner Telegram bot
+barcode-bot.py — Barcode Scanner Telegram bot
 
-Same behaviour as bot.py, rebuilt around small classes with one job each:
+rebuilt around small classes with one job each:
 
     Settings        all configuration, read once, passed everywhere
     AccessControl   the file-backed allowlist of Telegram user IDs
@@ -162,7 +162,7 @@ class Settings:
         if missing:
             raise RuntimeError(
                 "Missing configuration: " + ", ".join(missing)
-                + " -- put them in .env next to bot_oop.py or export them in the environment"
+                + " -- put them in .env next to barcode-bot.py or export them in the environment"
             )
         return settings
 
