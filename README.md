@@ -1,4 +1,4 @@
-# barcode-bot-oop
+# barcode-bot
 
 Point your phone at a barcode, get the product and live per-store prices back
 in Telegram. This repo is the object-oriented rewrite of
