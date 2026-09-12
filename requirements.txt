@@ -1,0 +1,8 @@
+# Runtime dependencies of bot_oop.py.
+# Tested combo (Debian 12, Python 3.11.2): python-telegram-bot 21.7, httpx 0.28.1,
+# pymssql 2.3.13, pyzbar 0.1.9, pillow 12.3.0.
+# httpx comes in as a python-telegram-bot dependency and is used directly too.
+python-telegram-bot==21.7
+pymssql>=2.3
+pyzbar>=0.1.9
+pillow>=10.0

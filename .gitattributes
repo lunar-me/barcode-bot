@@ -1,0 +1,3 @@
+# normalize line endings: this repo lives on Windows and deploys to Linux
+* text=auto eol=lf
+*.png binary

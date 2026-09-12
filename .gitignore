@@ -1,0 +1,27 @@
+# --- secrets and instance-specific files: never commit these ---------------
+.env
+token.txt
+bot.py
+bot.log*
+barcode.env
+smoke_test.py
+
+# bot.py is the private legacy monolith: it carries this instance's real
+# credentials and is only needed beside the test suite for parity checks.
+
+# --- python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# --- virtual environments --------------------------------------------------
+venv/
+.venv/
+
+# --- editors / os ----------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
