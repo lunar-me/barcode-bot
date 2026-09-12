@@ -54,6 +54,12 @@ MSSQL_PASSWORD=...
 MSSQL_DATABASE=Barcodes     # default
 ```
 
+If you need something to start from, you may use these GUIDs.
+They are for Woolworths Eastgate and PAK N'Save Wainoni in Christchurch
+
+>db2eb95f-475c-46e5-a2c8-cd3df8a51fe6,91593d98-3d67-1627-d024-c530138abd4d
+
+
 Rules:
 
 * **Real environment wins.** The built-in loader uses `setdefault`, so
@@ -139,10 +145,8 @@ at the top, so on a fresh clone the suite needs a legacy `bot.py` placed next
 to it to run; that is by design — the parity battery is what kept the rewrite
 honest during development.
 
-## Safety notes
+## Notes
 
-* Never commit `.env`, `token.txt` or your own `bot.py` — all three are in
-  `.gitignore` already.
 * The Telegram token can live in `.env` (`BARCODE_BOT_TOKEN=...`) or in a
   `token.txt` beside the script; whichever it finds first wins.
 
